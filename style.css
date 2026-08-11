@@ -882,6 +882,26 @@ header.scrolled {
   min-height: 350px;
 }
 
+/* About Us Section */
+.about-section {
+  padding: 72px 0;
+  background-color: #fff;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-content p {
+  color: var(--text-muted);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
 /* Contact/Booking Section */
 .contact-section {
   padding: 72px 0;
