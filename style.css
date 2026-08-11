@@ -164,19 +164,19 @@ button, input, select, textarea {
 .section-header {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 40px auto;
 }
 
 .section-title {
   font-size: 38px;
   font-weight: 800;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   letter-spacing: -0.5px;
 }
 
 .section-desc {
   color: var(--text-muted);
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /* Glass Cards */
@@ -186,7 +186,7 @@ button, input, select, textarea {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  padding: 36px;
+  padding: 28px;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
 }
@@ -297,10 +297,10 @@ header.scrolled {
 /* Hero Section with Parallax Storytelling */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 82vh;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 88px;
   background: linear-gradient(135deg, rgba(10, 22, 36, 0.94) 0%, rgba(20, 42, 66, 0.88) 100%), url('assets/hero.jpg') center/cover no-repeat;
   color: var(--text-light);
   overflow: hidden;
@@ -318,11 +318,11 @@ header.scrolled {
   background-color: rgba(0, 132, 255, 0.2);
   border: 1px solid var(--accent-blue);
   color: var(--text-light);
-  padding: 8px 18px;
+  padding: 8px 16px;
   border-radius: 50px;
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   animation: fadeInDown 0.8s ease;
 }
 
@@ -331,11 +331,11 @@ header.scrolled {
 }
 
 .hero h1 {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 800;
   color: var(--text-light);
   line-height: 1.15;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   animation: fadeInUp 0.8s ease;
   letter-spacing: -1px;
 }
@@ -345,16 +345,16 @@ header.scrolled {
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: 18px;
   color: rgba(220, 230, 240, 0.9);
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   animation: fadeInUp 1s ease;
   max-width: 700px;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   animation: fadeInUp 1.2s ease;
 }
 
@@ -383,7 +383,7 @@ header.scrolled {
 
 /* Stats Section */
 .stats-section {
-  padding: 80px 0;
+  padding: 56px 0;
   background-color: var(--primary);
   color: var(--text-light);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -392,7 +392,7 @@ header.scrolled {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
+  gap: 24px;
   text-align: center;
 }
 
@@ -420,14 +420,14 @@ header.scrolled {
 
 /* Methodology Section (Study -> Diagnose -> Solve) */
 .methodology-section {
-  padding: 100px 0;
+  padding: 72px 0;
   background-color: var(--neutral-light);
 }
 
 .methodology-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 24px;
   position: relative;
 }
 
@@ -471,14 +471,14 @@ header.scrolled {
 
 /* Pain Points Section */
 .pain-section {
-  padding: 100px 0;
+  padding: 72px 0;
   background-color: #fff;
 }
 
 .pain-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 32px;
+  gap: 24px;
 }
 
 .pain-card {
@@ -546,7 +546,7 @@ header.scrolled {
 
 /* Stepper Health Diagnostic Assessment Tool */
 .diagnostic-section {
-  padding: 100px 0;
+  padding: 72px 0;
   background-color: var(--neutral-light);
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -560,12 +560,12 @@ header.scrolled {
 .diag-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 40px;
+  gap: 32px;
   align-items: stretch;
 }
 
 .diag-box {
-  padding: 40px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -687,7 +687,7 @@ header.scrolled {
   background-color: var(--primary);
   color: var(--text-light);
   border-radius: 12px;
-  padding: 40px;
+  padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -752,14 +752,14 @@ header.scrolled {
 
 /* Case Studies Section */
 .case-section {
-  padding: 100px 0;
+  padding: 72px 0;
   background-color: #fff;
 }
 
 .case-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 32px;
+  gap: 24px;
 }
 
 .case-card {
@@ -884,14 +884,14 @@ header.scrolled {
 
 /* Contact/Booking Section */
 .contact-section {
-  padding: 100px 0;
+  padding: 72px 0;
   background-color: hsl(220, 30%, 97%);
 }
 
 .contact-grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
-  gap: 60px;
+  gap: 40px;
   align-items: stretch;
 }
 
@@ -902,14 +902,14 @@ header.scrolled {
 }
 
 .contact-details {
-  margin-top: 36px;
+  margin-top: 28px;
 }
 
 .contact-item-row {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .contact-item-icon {
@@ -937,13 +937,13 @@ header.scrolled {
 
 /* Dynamic Inquiry Form */
 .contact-card {
-  padding: 48px;
+  padding: 32px;
 }
 
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 20px;
 }
 
 .form-group-full {
@@ -1012,15 +1012,15 @@ header.scrolled {
 footer {
   background-color: var(--neutral-dark);
   color: var(--text-light);
-  padding: 80px 0 30px 0;
+  padding: 60px 0 24px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 48px;
-  margin-bottom: 60px;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 36px;
+  margin-bottom: 40px;
 }
 
 .footer-logo {
@@ -1094,9 +1094,16 @@ footer {
   padding-left: 5px;
 }
 
+.company-story {
+  margin-top: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding-top: 30px;
+  padding-top: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;

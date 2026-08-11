@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Success response
-    showFormSuccess(`Thank you, ${name}! Your diagnostic booking request for ${company} is submitted. A senior consulting manager will call you on ${phone} within 2 hours.`);
+    showFormSuccess(`Thank you, ${name}! Your diagnostic booking request for ${company} is prepared for delivery to janakiram@msmeconsult.in. A senior consulting manager will call you on ${phone} within 2 hours.`);
 
     // Persist details locally
     const bookings = JSON.parse(localStorage.getItem('msme_consult_bookings') || '[]');
@@ -240,6 +240,21 @@ document.addEventListener('DOMContentLoaded', () => {
       timestamp: new Date().toISOString()
     });
     localStorage.setItem('msme_consult_bookings', JSON.stringify(bookings));
+
+    const mailToLink = `mailto:janakiram@msmeconsult.in?subject=${encodeURIComponent(`Diagnostic Booking Request - ${company}`)}&body=${encodeURIComponent([
+      `Company: ${company}`,
+      `Contact Name: ${name}`,
+      `Phone: ${phone}`,
+      `Email: ${email || 'Not provided'}`,
+      `Industry Sector: ${sector || 'Not provided'}`,
+      `Employee Strength: ${size || 'Not provided'}`,
+      `Notes: ${notes || 'Not provided'}`,
+      `Submitted: ${new Date().toISOString()}`
+    ].join('\n'))}`;
+
+    window.setTimeout(() => {
+      window.location.href = mailToLink;
+    }, 250);
 
     // Reset form
     form.reset();
