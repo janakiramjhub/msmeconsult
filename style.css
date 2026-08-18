@@ -220,15 +220,15 @@ header.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 96px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   font-family: var(--font-heading);
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 800;
   color: var(--primary);
   line-height: 1;
@@ -236,13 +236,13 @@ header.scrolled {
 
 .logo i {
   color: var(--accent-blue);
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .brand-logo-img {
-  height: 48px;
+  height: 72px;
   width: auto;
-  max-width: 170px;
+  max-width: 220px;
   object-fit: contain;
   display: block;
 }
