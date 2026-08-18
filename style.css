@@ -238,6 +238,13 @@ header.scrolled {
   font-size: 26px;
 }
 
+.brand-logo-img {
+  height: 42px;
+  max-width: 140px;
+  object-fit: contain;
+  display: block;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
