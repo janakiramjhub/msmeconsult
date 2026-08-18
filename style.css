@@ -220,31 +220,36 @@ header.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 110px;
+  height: 84px;
 }
 
 .logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   font-family: var(--font-heading);
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 800;
   color: var(--primary);
   line-height: 1;
+  text-decoration: none;
+  flex-shrink: 0;
 }
 
 .logo i {
   color: var(--accent-blue);
-  font-size: 32px;
+  font-size: 26px;
 }
 
 .brand-logo-img {
-  height: 90px;
-  width: auto;
-  max-width: 280px;
+  height: 54px !important;
+  width: auto !important;
+  min-width: 48px;
+  max-width: 140px;
   object-fit: contain;
-  display: block;
+  display: inline-block !important;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 .nav-menu {
@@ -337,10 +342,10 @@ header.scrolled {
 
 .hero-featured-logo {
   width: 100%;
-  max-width: 440px;
+  max-width: 220px;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.45));
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.4));
   animation: floatLogo 4s ease-in-out infinite alternate;
 }
 
