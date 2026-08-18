@@ -220,15 +220,15 @@ header.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 84px;
+  height: 90px;
 }
 
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   font-family: var(--font-heading);
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 800;
   color: var(--primary);
   line-height: 1;
@@ -238,14 +238,14 @@ header.scrolled {
 
 .logo i {
   color: var(--accent-blue);
-  font-size: 26px;
+  font-size: 28px;
 }
 
 .brand-logo-img {
-  height: 54px !important;
+  height: 68px !important;
   width: auto !important;
-  min-width: 48px;
-  max-width: 140px;
+  min-width: 60px;
+  max-width: 200px;
   object-fit: contain;
   display: inline-block !important;
   vertical-align: middle;
@@ -311,11 +311,11 @@ header.scrolled {
 /* Hero Section with Parallax Storytelling */
 .hero {
   position: relative;
-  min-height: 85vh;
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding-top: 110px;
-  padding-bottom: 60px;
+  padding-top: 105px;
+  padding-bottom: 24px;
   background: linear-gradient(135deg, rgba(10, 22, 36, 0.94) 0%, rgba(20, 42, 66, 0.88) 100%), url('assets/hero.jpg') center/cover no-repeat;
   color: var(--text-light);
   overflow: hidden;
@@ -323,8 +323,8 @@ header.scrolled {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 40px;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 20px;
   align-items: center;
 }
 
@@ -342,16 +342,10 @@ header.scrolled {
 
 .hero-featured-logo {
   width: 100%;
-  max-width: 190px;
+  max-width: 135px;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
-  animation: floatLogo 4s ease-in-out infinite alternate;
-}
-
-@keyframes floatLogo {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-12px); }
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
 }
 
 .hero-tag {
