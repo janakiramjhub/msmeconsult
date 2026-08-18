@@ -226,21 +226,23 @@ header.scrolled {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   font-family: var(--font-heading);
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 800;
   color: var(--primary);
+  line-height: 1;
 }
 
 .logo i {
   color: var(--accent-blue);
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .brand-logo-img {
-  height: 42px;
-  max-width: 140px;
+  height: 36px;
+  width: auto;
+  max-width: 120px;
   object-fit: contain;
   display: block;
 }
